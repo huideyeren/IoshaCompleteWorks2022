@@ -33,7 +33,7 @@ end
 
 desc 'run pandoc2review'
 task :pandoc2review do
-  path = 'chapter'
+  path = '_refiles'
   p2r = 'pandoc2review'
   if File.exist?('../../pandoc2review')
     p2r = '../../pandoc2review'
