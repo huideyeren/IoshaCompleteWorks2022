@@ -64,7 +64,7 @@ jobs:
     name: Make PDF
     runs-on: ubuntu-latest
     container:
-      image: huideyeren/review
+      image: ghcr.io/huideyeren/review-docker
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
