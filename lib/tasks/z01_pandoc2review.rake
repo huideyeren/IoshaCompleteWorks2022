@@ -26,6 +26,8 @@ def make_mdre(ch, p2r, path)
     FileUtils.cp(ch, path)
   elsif File.exist?(ch.sub(/\.re\Z/, '.md')) # md file
     system("#{p2r} #{ch.sub(/\.re\Z/, '.md')} > #{path}/#{ch}")
+  elsif File.exist?(ch.sub(/\.re\Z/, '.docx')) # md file
+    system("#{p2r} #{ch.sub(/\.re\Z/, '.docx')} > #{path}/#{ch}")
   end
 end
 
@@ -67,9 +69,3 @@ Rake::Task[WEBROOT].enhance([:pandoc2review])
 Rake::Task[TEXTROOT].enhance([:pandoc2review])
 Rake::Task[TOPROOT].enhance([:pandoc2review])
 Rake::Task[IDGXMLROOT].enhance([:pandoc2review])
-英語
-日本語
-
-
-ページを翻訳
-今後表示しない
