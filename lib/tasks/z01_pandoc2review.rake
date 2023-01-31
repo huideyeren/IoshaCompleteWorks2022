@@ -26,8 +26,6 @@ def make_mdre(ch, p2r, path)
     FileUtils.cp(ch, path)
   elsif File.exist?(ch.sub(/\.re\Z/, '.md')) # md file
     system("#{p2r} #{ch.sub(/\.re\Z/, '.md')} > #{path}/#{ch}")
-  elsif File.exist?(ch.sub(/\.re\Z/, '.docx')) # docx file
-    system("#{p2r} #{ch.sub(/\.re\Z/, '.docx')} > #{path}/#{ch}")
   end
 end
 
