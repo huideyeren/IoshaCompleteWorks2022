@@ -4,7 +4,7 @@ PREDEF:
 CHAPS:
   - test.re
   - markdown.re
-  # - word.re
+  - word.re
 
 APPENDIX:
 
