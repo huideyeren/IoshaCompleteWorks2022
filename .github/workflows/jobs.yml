@@ -64,7 +64,7 @@ jobs:
     name: Make PDF
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/huideyeren/review-docker:sha256-4eaebe5e8cf8d3805f6b017d504ec4bab58da1c6685e4cf29575abbf6931c7e8.sig
+      image: ghcr.io/huideyeren/review-docker
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
@@ -98,7 +98,7 @@ jobs:
     name: Make EPUB
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/huideyeren/review-docker:sha256-4eaebe5e8cf8d3805f6b017d504ec4bab58da1c6685e4cf29575abbf6931c7e8.sig
+      image: ghcr.io/huideyeren/review-docker
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
