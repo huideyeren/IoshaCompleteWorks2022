@@ -22,12 +22,14 @@ require 'fileutils'
 require 'yaml'
 
 def make_mdre(ch, p2r, path)
-  if File.exist?(ch) # re file
-    FileUtils.cp(ch, path)
-  elsif File.exist?(ch.sub(/\.re\Z/, '.md')) # md file
-    system("#{p2r} #{ch.sub(/\.re\Z/, '.md')} > #{path}/#{ch}")
-  elsif File.exist?(ch.sub(/\.re\Z/, '.docx')) # md file
-    system("#{p2r} #{ch.sub(/\.re\Z/, '.docx')} > #{path}/#{ch}")
+  basedir = 'chapter/'
+  source = basedir + ch
+  if File.exist?(source) # re file
+    FileUtils.cp(source, path)
+  elsif File.exist?(source.sub(/\.re\Z/, '.md')) # md file
+    system("#{p2r} #{source.sub(/\.re\Z/, '.md')} > #{path}/#{ch}")
+  elsif File.exist?(source.sub(/\.re\Z/, '.docx')) # md file
+    system("#{p2r} #{source.sub(/\.re\Z/, '.docx')} > #{path}/#{ch}")
   end
 end
 
