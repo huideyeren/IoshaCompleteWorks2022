@@ -22,12 +22,12 @@ language: ja
 
 # 書名
 # 読みを入れる例 booktitle: {name: "Re:VIEW EPUBサンプル", file-as: "リビューイーパブサンプル"}
-booktitle: "現代焚書第7号"
-subtitle: "「壁」を越える！"
+booktitle: "ヨーシャ（るいざ・しゃーろっと）全集"
+subtitle: "第1巻 2022年"
 
 # 著者名。「, 」で区切って複数指定できる
 # 読みを入れる例 aut: [{name: "青木峰郎", file-as: "アオキミネロウ"}, {name: "武藤健志", file-as: "ムトウケンシ"}, {name: "高橋征義", file-as: "タカハシマサヨシ"}, {name: "角征典", file-as: "カドマサノリ"}]
-aut: [{name: "ヨーシャ", file-as: "ヨーシャ"},{name: "るいざ・しゃーろっと", file-as: "ルイザ・シャーロット"}]
+aut: [{name: "ヨーシャ（るいざ・しゃーろっと）", file-as: "ヨーシャ（ルイザ・シャーロット）"}]
 
 # 以下はオプション
 # 以下はオプション(autと同じように配列書式で複数指定可能)。
@@ -59,7 +59,7 @@ aut: [{name: "ヨーシャ", file-as: "ヨーシャ"},{name: "るいざ・しゃ
 # a-pbl, pbl: 出版社（発行所） ※ サークル名はここに設定するとよい
 a-pbl: 恢徳堂
 # a-prt, prt: 印刷所
-prt: ねこのしっぽ
+prt: pixivFACTORY
 # a-red, red: 項目の枠組起草者
 # a-rev, rev: 評論者
 # a-spn, spn: 援助者
@@ -358,7 +358,8 @@ texstyle: ["reviewmacro"]
 # オプションについてはsty/README.mdを参照
 # デフォルトは印刷用。電子配布版を作るには media=ebook とする
 # texdocumentclass: ["review-jsbook", "paper=b5,serial_pagination=true,cameraready=ebook,cover=false,hiddenfolio=shippo,fontsize=10pt,line_length=40zw,number_of_lines=34,baselineskip=25.5H"]
-texdocumentclass: ["review-jlreq", "media=print,paper=b5,fontsize=10pt,serial_pagination=true,hiddenfolio=shippo,startpage=3,tate,twoside,twocolumn,openany"]
+# texdocumentclass: ["review-jlreq", "media=print,paper=b5,fontsize=10pt,serial_pagination=true,hiddenfolio=shippo,startpage=3,tate,twoside,twocolumn,openany"]
+texdocumentclass: ["review-jlreq", "media=ebook,paper=b5,fontsize=12pt,serial_pagination=false,startpage=3,tate,twoside,twocolumn,openany"]
 #
 # LaTeX用のコマンドを指定する
 # texcommand: "uplatex"
