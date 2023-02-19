@@ -6,7 +6,11 @@
 
 % 後注の出力場所に関する設定
 % Re:VIEW 5.3が来たら取り除く
-\jlreqsetup{endnote_position={_chapter}}
+%\jlreqsetup{endnote_position={_chapter}}
+
+% for user-defined macro
+% 縦横比を変えたくない（ずれた部分は白くなる）場合は以下を利用
+\def\review@coverimageoption{width=\paperwidth,height=\paperheight,keepaspectratio}%
 
 % ここの意味は要調査
 \renewcommand{\reviewbibref}[2]{\cite{#2}}

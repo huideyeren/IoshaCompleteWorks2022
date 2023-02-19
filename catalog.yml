@@ -2,9 +2,10 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - test.re
+  - review.re
   - markdown.re
-  - word.re
+  # - word-format.re
+  # - odt-format.re
 
 APPENDIX:
 
