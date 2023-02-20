@@ -93,29 +93,29 @@ jobs:
         with:
           name: book.pdf
           path: book.pdf
-  epub:
-    needs: reviewdog-github-check
-    name: Make EPUB
-    runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/huideyeren/review-docker:main
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - name: Install gems.
-        run: bundle install
-      - name: Copy plantuml.
-        run: cp /java/plantuml.jar .
-      - name: Check tools
-        run: dot -V && blockdiag --version && java -jar plantuml.jar -version
-      - name: convert PlantUML
-        run: pwd | bash ./plantuml.sh >> .plantuml.log
-      - name: Show .plantuml.log
-        run: cat .plantuml.log
-      - name: Build EPUB.
-        run: bundle exec rake clean epub
-      - name: Upload artifact.
-        uses: actions/upload-artifact@v3
-        with:
-          name: book.epub
-          path: book.epub
+  # epub:
+  #   needs: reviewdog-github-check
+  #   name: Make EPUB
+  #   runs-on: ubuntu-latest
+  #   container:
+  #     image: ghcr.io/huideyeren/review-docker:main
+  #   steps:
+  #     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+  #     - uses: actions/checkout@v3
+  #     - name: Install gems.
+  #       run: bundle install
+  #     - name: Copy plantuml.
+  #       run: cp /java/plantuml.jar .
+  #     - name: Check tools
+  #       run: dot -V && blockdiag --version && java -jar plantuml.jar -version
+  #     - name: convert PlantUML
+  #       run: pwd | bash ./plantuml.sh >> .plantuml.log
+  #     - name: Show .plantuml.log
+  #       run: cat .plantuml.log
+  #     - name: Build EPUB.
+  #       run: bundle exec rake clean epub
+  #     - name: Upload artifact.
+  #       uses: actions/upload-artifact@v3
+  #       with:
+  #         name: book.epub
+  #         path: book.epub
