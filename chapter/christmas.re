@@ -5,11 +5,10 @@
 == 訓点ありの詩
 
 //texequation{
-$$\begin{array}{l}
+\begin{array}{l}
 落日猶^オ燈火^アリ\\
 \overset{こんしょう}{昏鐘}響^ク_二\overset{めいけい}{茗渓}^ニ_一
 \overset{かんみん}{鰥民}催^ス_二小宴^ヲ_一
 聖夜^ハ勿^カレ_二悲啼^スルコト_一
 \end{array}
-$$
 //}
