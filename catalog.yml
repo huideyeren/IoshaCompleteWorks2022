@@ -2,9 +2,9 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - フォーマットテスト:
-    - review.re
-    - markdown.re
+  # - フォーマットテスト:
+  #   - review.re
+  #   - markdown.re
   - 小説作品:
     - novel1.re
   - 漢詩作品:
