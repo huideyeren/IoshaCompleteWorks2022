@@ -230,7 +230,7 @@ math_format: imgmath
 # という構成にする必要がある(インデントさせる)
 imgmath_options:
   # 使用する画像拡張子。通常は「png」か「svg」（svgの場合は、pdfcrop_pixelize_cmdの-pngも-svgにする）
-  format: png
+  format: svg
   # 変換手法。pdfcrop または dvipng
   converter: pdfcrop
   # プリアンブルの内容を上書きするファイルを指定する（デフォルトはupLaTeX+jsarticle.clsを前提とした、lib/review/makerhelper.rbのdefault_imgmath_preambleメソッドの内容）
