@@ -59,7 +59,7 @@ jobs:
           npx textlint -f checkstyle chapter/*.re wiki/*.md README.md \
           | reviewdog -f=checkstyle -name="textlint" -diff="git diff ${{ github.event.pull_request.base.ref }}" -reporter=github-pr-review -level="error"
 
-  pdf:
+  paper:
     needs: reviewdog-github-check
     name: Make PDF
     runs-on: ubuntu-latest
@@ -82,10 +82,10 @@ jobs:
         run: pwd | python3 svg.py >> .svg.log
       - name: Show .svg.log
         run: cat .svg.log
-      # - name: Rotate images.
-      #   run: pwd | python3 rotate.py >> .rotate.log
-      # - name: Show .rotate.log
-      #   run: cat .rotate.log
+      - name: Grayscaling images.
+        run: pwd | python3 grayscaling.py >> .grayscaling.log
+      - name: Show .grayscaling.log
+        run: cat .grayscaling.log
       - name: Build PDF.
         run: bundle exec rake clean pdf
       - name: Upload artifact.
@@ -93,29 +93,33 @@ jobs:
         with:
           name: book.pdf
           path: book.pdf
-  # epub:
-  #   needs: reviewdog-github-check
-  #   name: Make EPUB
-  #   runs-on: ubuntu-latest
-  #   container:
-  #     image: ghcr.io/huideyeren/review-docker:main
-  #   steps:
-  #     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-  #     - uses: actions/checkout@v3
-  #     - name: Install gems.
-  #       run: bundle install
-  #     - name: Copy plantuml.
-  #       run: cp /java/plantuml.jar .
-  #     - name: Check tools
-  #       run: dot -V && blockdiag --version && java -jar plantuml.jar -version
-  #     - name: convert PlantUML
-  #       run: pwd | bash ./plantuml.sh >> .plantuml.log
-  #     - name: Show .plantuml.log
-  #       run: cat .plantuml.log
-  #     - name: Build EPUB.
-  #       run: bundle exec rake clean epub
-  #     - name: Upload artifact.
-  #       uses: actions/upload-artifact@v3
-  #       with:
-  #         name: book.epub
-  #         path: book.epub
+  ebook:
+    needs: reviewdog-github-check
+    name: Make PDF
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/huideyeren/review-docker:main
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      - name: Install gems.
+        run: bundle install
+      - name: Copy plantuml.
+        run: cp /java/plantuml.jar .
+      - name: Check tools
+        run: dot -V && blockdiag --version && java -jar plantuml.jar -version
+      - name: convert PlantUML
+        run: pwd | bash ./plantuml.sh >> .plantuml.log
+      - name: Show .plantuml.log
+        run: cat .plantuml.log
+      - name: Convert SVG to PDF
+        run: pwd | python3 svg.py >> .svg.log
+      - name: Show .svg.log
+        run: cat .svg.log
+      - name: Build PDF.
+        run: REVIEW_CONFIG_FILE=config-download.yml bundle exec rake clean pdf
+      - name: Upload artifact.
+        uses: actions/upload-artifact@v3
+        with:
+          name: book.pdf
+          path: book.pdf
