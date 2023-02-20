@@ -10,7 +10,7 @@
 
 //texequation{
 $$
-\\
+　\\
 \kundoku{落}{らく}{}{}
 \kundoku{日}{じつ}{}{}
 \kundoku{猶}{な}{オ}{}
