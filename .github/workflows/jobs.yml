@@ -23,15 +23,15 @@ jobs:
 
     steps:
         #reviewdogのアクション
-      - uses: reviewdog/action-setup@v1
+      - uses: reviewdog/action-setup@v3
         with:
           reviewdog_version: latest
 
         #textlintを動かすためのnodeアクション
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
 
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: recursive
 
@@ -67,7 +67,7 @@ jobs:
       image: ghcr.io/huideyeren/review-docker:main
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Install gems.
         run: bundle install
       - name: Copy plantuml.
@@ -89,7 +89,7 @@ jobs:
       - name: Build PDF.
         run: bundle exec rake clean pdf
       - name: Upload artifact.
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: book.pdf
           path: book.pdf
@@ -101,7 +101,7 @@ jobs:
       image: ghcr.io/huideyeren/review-docker:main
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Install gems.
         run: bundle install
       - name: Copy plantuml.
@@ -115,7 +115,7 @@ jobs:
       - name: Build EPUB.
         run: bundle exec rake clean epub
       - name: Upload artifact.
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: book.epub
           path: book.epub
