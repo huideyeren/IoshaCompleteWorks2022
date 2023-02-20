@@ -2,7 +2,11 @@
 
 この記事は「言の葉の集い Advent Calendar ２０２２」に投稿した12月25日（日）の記事です。
 
+このアドベントカレンダーは https://adventar.org/calendars/8220 で公開されています。
+
 == 訓点ありの詩
+
+降誕祭　　路易莎夏洛特
 
 //texequation{
 $$

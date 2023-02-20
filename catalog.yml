@@ -6,13 +6,15 @@ CHAPS:
   #   - review.re
   #   - markdown.re
   - 小説作品:
-    - novel1.re
+    - saigo-no-maru.re
+    - seiya.re
+    - kibou.re
+    - wii-sama.re
+    - kabe.re
   - 漢詩作品:
     - christmas.re
   - ウクライナ三部作:
-    - despair.re
-    - penance.re
-    - hope.re
+    - ukraine.re
   - 「きっとあなたの140字」作品集:
     - 140chars.re
   - ブログ記事傑作選: 
