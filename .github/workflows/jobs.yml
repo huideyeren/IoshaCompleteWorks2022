@@ -23,7 +23,7 @@ jobs:
 
     steps:
         #reviewdogのアクション
-      - uses: reviewdog/action-setup@v3
+      - uses: reviewdog/action-setup@v1
         with:
           reviewdog_version: latest
 
