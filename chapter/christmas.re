@@ -5,10 +5,27 @@
 == 訓点ありの詩
 
 //texequation{
-\begin{array}{l}
-落日猶^オ燈火^アリ\\
-\overset{こんしょう}{昏鐘}響^ク_二\overset{めいけい}{茗渓}^ニ_一
-\overset{かんみん}{鰥民}催^ス_二小宴^ヲ_一
-聖夜^ハ勿^カレ_二悲啼^スルコト_一
-\end{array}
+\kundoku{落}{らく}{}{}
+\kundoku{日}{じつ}{}{}
+\kundoku{猶}{な}{オ}{}
+\kundoku{燈}{トウ}{}{}
+\kundoku{火}{カ}{}{}
+
+\kundoku{昏}{こん}{}{}
+\kundoku{鐘}{しょう}{}{}
+\kundoku{響}{ひび}{ク}{二}
+\kundoku{茗}{めい}{}{}
+\kundoku{渓}{けい}{ニ}{一}
+
+\kundoku{鰥}{かん}{}{}
+\kundoku{民}{みん}{}{}
+\kundoku{催}{もよお}{ス}{二}
+\kundoku{小}{しょう}{}{}
+\kundoku{宴}{えん}{ヲ}{一}
+
+\kundoku{聖}{せい}{}{}
+\kundoku{夜}{や}{ハ}{}
+\kundoku{勿}{な}{カレ}{二}
+\kundoku{悲}{ひ}{}{}
+\kundoku{啼}{てい}{スルコト}{一}
 //}
