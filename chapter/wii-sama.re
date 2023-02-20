@@ -10,7 +10,7 @@
 
 その時のマインドマップはこちらになります。
 
-//image[mindmap-wii-sama][「第３回　ＶＲメモフラワークショップ」でのマインドマップ][scale=1.0]{
+//image[mindmap-wii-sama][「第３回　ＶＲメモフラワークショップ」でのマインドマップ][scale=0.5]{
   元ツイート: https://twitter.com/Hermit_Heaven/status/1590343245661626369
 //}
 

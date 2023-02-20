@@ -8,7 +8,7 @@
 
 その時のマインドマップはこちらになります。
 
-//image[mindmap-louisa][「第４回　ＶＲメモフラワークショップ」でのマインドマップ][scale=1.0]{
+//image[mindmap-louisa][「第４回　ＶＲメモフラワークショップ」でのマインドマップ][scale=0.5]{
   元ツイート: https://twitter.com/Hermit_Heaven/status/1613894820787007490
 //}
 
