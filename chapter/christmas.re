@@ -10,8 +10,8 @@ $$
 \kundoku{落}{らく}{}{}
 \kundoku{日}{じつ}{}{}
 \kundoku{猶}{な}{オ}{}
-\kundoku{燈}{トウ}{}{}
-\kundoku{火}{カ}{}{}\\
+\kundoku{燈}{とう}{}{}
+\kundoku{火}{か}{アリ}{}\\
 \kundoku{昏}{こん}{}{}
 \kundoku{鐘}{しょう}{}{}
 \kundoku{響}{ひび}{ク}{二}
