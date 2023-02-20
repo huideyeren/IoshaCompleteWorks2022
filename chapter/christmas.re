@@ -6,11 +6,9 @@
 
 == 訓点ありの詩
 
-降誕祭　　路易莎夏洛特
-
 //texequation{
 $$
-\leavevmode \\
+降誕祭　　路易莎夏洛特\\
 \kundoku{落}{らく}{}{}
 \kundoku{日}{じつ}{}{}
 \kundoku{猶}{な}{オ}{}
