@@ -61,7 +61,7 @@ jobs:
 
   paper:
     needs: reviewdog-github-check
-    name: Make PDF
+    name: Make PDF for Paper
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/huideyeren/review-docker:main
@@ -91,11 +91,11 @@ jobs:
       - name: Upload artifact.
         uses: actions/upload-artifact@v3
         with:
-          name: book.pdf
-          path: book.pdf
+          name: louisa-complete-works.pdf
+          path: louisa-complete-works.pdf
   ebook:
     needs: reviewdog-github-check
-    name: Make PDF
+    name: Make PDF for Download
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/huideyeren/review-docker:main
@@ -121,5 +121,5 @@ jobs:
       - name: Upload artifact.
         uses: actions/upload-artifact@v3
         with:
-          name: book.pdf
-          path: book.pdf
+          name: louisa-complete-works-for-download.pdf
+          path: louisa-complete-works-for-download.pdf
