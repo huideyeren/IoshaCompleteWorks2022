@@ -424,20 +424,20 @@ pdfmaker:
   #
   # 索引を作成するか。trueにすると索引作成が有効になる
   # makeindex: null
-  makeindex: true
+  makeindex: null
   # 索引作成コマンド
   # makeindex_command: mendex
   # 索引作成コマンドのオプション
   # makeindex_options: "-f -r -I utf8"
   # 索引作成コマンドのスタイルファイル
-  makeindex_sty: index.ist
+  # makeindex_sty: index.ist
   # 索引作成コマンドの辞書ファイル
   # makeindex_dic: null
-  makeindex_dic: sakuin.dic
+  # makeindex_dic: sakuin.dic
   # MeCabによる索引読み探索を使うか
-  makeindex_mecab: true
+  # makeindex_mecab: true
   # MeCabの読みの取得オプション
-  makeindex_mecab_opts: "-Oyomi"
+  # makeindex_mecab_opts: "-Oyomi"
   # 奥付を作成するか。trueを指定するとデフォルトの奥付、ファイル名を指定するとそれがcolophon.htmlとしてコピーされる
   colophon: true
   # 表紙挿入時に表紙のページ番号名を「cover」とし、偶数ページ扱いにして大扉前に白ページが入るのを防ぐ。デフォルトはtrue
