@@ -16,3 +16,7 @@
 ２０２３年３月１日
 るいざ・しゃーろっと
 //}
+
+//embed[latex]{
+\clearoddpage
+//}
