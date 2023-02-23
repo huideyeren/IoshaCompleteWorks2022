@@ -1,10 +1,7 @@
 PREDEF:
-  - preface.re
+  - dedication.re
 
 CHAPS:
-  # - フォーマットテスト:
-  #   - review.re
-  #   - markdown.re
   - 小説作品:
     - saigo-no-maru.re
     - seiya.re
