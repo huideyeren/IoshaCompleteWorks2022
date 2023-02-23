@@ -53,3 +53,7 @@ $$
 クリスマスを嘆き悲しんではいけませんよ
 
 //printendnotes
+
+//embed[latex]{
+\includefullpagegraphics{images/nikolai.pdf}
+//}

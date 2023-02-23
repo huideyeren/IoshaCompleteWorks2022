@@ -132,3 +132,7 @@
 //noindent
 なにがあったのかって？@<br>{}
 答えは、雪に聞け。
+
+//embed[latex]{
+\includefullpagegraphics{images/yamanote.pdf}
+//}

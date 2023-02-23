@@ -45,3 +45,7 @@
 もう、運命に翻弄される私たちではないんだ！@<br>{}
 今だからこそ、無力だった彼らを赦せるのだ。@<br>{}
 何も知らずに、過ちを犯すしかなかった彼らを。
+
+//embed[latex]{
+\includefullpagegraphics{images/ukraine.pdf}
+//}
