@@ -2,9 +2,9 @@
 
 == はじめに
 
-この作品は、@<href>{https://adventar.org/calendars/8220,言の葉の集い Advent Calendar 2022}の１２月９日（金）の記事です。
+この作品は、@<href>{https://adventar.org/calendars/8220,言の葉の集い Advent Calendar 2022}の@<tcy>{12}月９日（金）の記事です。
 
-あ、JR東日本様、ごめんなさい。
+あ、ＪＲ東日本様、ごめんなさい。
 
 また、この作品は２０２３年の冬の朗読会で朗読した作品になります。
 
