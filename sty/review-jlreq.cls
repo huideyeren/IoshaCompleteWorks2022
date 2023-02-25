@@ -120,6 +120,8 @@
   \@camerareadyfalse\@pdfhyperlinktrue\@pdftombofalse\@reclscovertrue
 \else\def\recls@tmp{print}\ifx\recls@cameraready\recls@tmp
   \@camerareadytrue\@pdfhyperlinkfalse\@pdftombotrue\@reclscoverfalse
+\else\def\recls@tmp{notombo}\ifx\recls@cameraready\recls@tmp
+  \@camerareadytrue\@pdfhyperlinkfalse\@pdftombofalse\@reclscoverfalse
 \else\def\recls@tmp{ebook}\ifx\recls@cameraready\recls@tmp
   \@camerareadytrue\@pdfhyperlinktrue\@pdftombofalse\@reclscovertrue
 \else
