@@ -59,7 +59,7 @@ aut: [{name: "るいざ・しゃーろっと", file-as: "ルイザ・シャー�
 # a-pbl, pbl: 出版社（発行所） ※ サークル名はここに設定するとよい
 a-pbl: 恢徳堂
 # a-prt, prt: 印刷所
-prt: pixivFACTORY
+prt: ねこのしっぽ
 # a-red, red: 項目の枠組起草者
 # a-rev, rev: 評論者
 # a-spn, spn: 援助者
@@ -75,7 +75,7 @@ date: 2023-03-01
 # 複数指定する場合は次のように記述する
 # [["初版第1刷の日付", "初版第2刷の日付"], ["第2版第1刷の日付"]]
 # 日付の後ろを空白文字で区切り、任意の文字列を置くことも可能。
-history: [["2023-03-01"]]
+history: [["2023-03-01"],["2023-06-01"]]
 # 権利表記(配列で複数指定可)
 rights: (C) 2023 恢徳堂
 # description: 説明
@@ -360,7 +360,7 @@ texstyle: ["reviewmacro"]
 # texdocumentclass: ["review-jsbook", "paper=b5,serial_pagination=true,cameraready=ebook,cover=false,hiddenfolio=shippo,fontsize=10pt,line_length=40zw,number_of_lines=34,baselineskip=25.5H"]
 # texdocumentclass: ["review-jlreq", "media=print,paper=b5,fontsize=10pt,serial_pagination=true,hiddenfolio=shippo,startpage=3,tate,twoside,twocolumn,openany"]
 # 印刷用
-texdocumentclass: ["review-jlreq", "media=print,paper=a5,bleed_margin=3,fontsize=10pt,serial_pagination=true,startpage=3,tate,twoside,onecolumn"]
+texdocumentclass: ["review-jlreq", "media=print,paper=a5,fontsize=10pt,serial_pagination=true,hiddenfolio=shippo,startpage=3,tate,twoside,onecolumn,openany"]
 # 電子用
 # texdocumentclass: ["review-jlreq", "media=ebook,paper=a5,fontsize=12pt,serial_pagination=false,startpage=3,tate,twoside,onecolumn"]
 #
