@@ -26,6 +26,7 @@ BOOK_PDF = BOOK + '.pdf'
 BOOK_EPUB = BOOK + '.epub'
 CONFIG_FILE = ENV['REVIEW_CONFIG_FILE'] || 'config.yml'
 CATALOG_FILE = ENV['REVIEW_CATALOG_FILE'] || 'catalog.yml'
+DOWNLOAD_CATALOG_FILE = ENV['REVIEW_DOWNLOAD_CATALOG_FILE'] || 'catalog-download.yml'
 WEBROOT = ENV['REVIEW_WEBROOT'] || 'webroot'
 TEXTROOT = BOOK + '-text'
 TOPROOT = BOOK + '-text'
@@ -103,7 +104,14 @@ task epub: BOOK_EPUB
 
 IMAGES = FileList['images/**/*']
 OTHERS = ENV['REVIEW_DEPS'] || []
-SRC = FileList['./**/*.re', '*.rb'] + [CONFIG_FILE, CATALOG_FILE] + IMAGES + FileList[OTHERS]
+
+if CONFIG_FILE == 'config-download.yml' then
+  catalog_yaml = DOWNLOAD_CATALOG_FILE
+else
+  catalog_yaml = CATALOG_FILE
+end
+
+SRC = FileList['./**/*.re', '*.rb'] + [CONFIG_FILE, catalog_yaml] + IMAGES + FileList[OTHERS]
 SRC_EPUB = FileList['*.css']
 SRC_PDF = FileList['layouts/*.erb', 'sty/**/*.sty']
 
