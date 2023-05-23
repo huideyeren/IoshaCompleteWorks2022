@@ -362,7 +362,7 @@ texstyle: ["reviewmacro"]
 # 印刷用
 # texdocumentclass: ["review-jlreq", "media=print,paper=a5,fontsize=12pt,serial_pagination=true,startpage=3,tate,twoside,onecolumn,openany"]
 # 電子用
-texdocumentclass: ["review-jlreq", "media=ebook,paper=a5,fontsize=10pt,serial_pagination=false,startpage=3,tate,twoside,twocolumn"]
+texdocumentclass: ["review-jlreq", "media=ebook,paper=a5,fontsize=10pt,serial_pagination=false,startpage=3,tate,twoside,onecolumn"]
 #
 # LaTeX用のコマンドを指定する
 # texcommand: "uplatex"

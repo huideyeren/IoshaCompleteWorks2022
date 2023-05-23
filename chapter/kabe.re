@@ -35,5 +35,5 @@
 そうだ、あの教壇に立とう。また桜は満開だ。振り向くな、過去には夢がない。あなたも私も、今、未来に向かって夢を駆けているのだ。壁を越えて、世界に平和を。私は、前へ、駆け続けるんだ！
 
 //embed[latex]{
-\includefullpagegraphics[scale=0.6]{images/inozu.pdf}
+\includefullpagegraphics[scale=1]{images/inozu.pdf}
 //}

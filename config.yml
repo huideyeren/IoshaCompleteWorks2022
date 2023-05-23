@@ -360,7 +360,7 @@ texstyle: ["reviewmacro"]
 # texdocumentclass: ["review-jsbook", "paper=b5,serial_pagination=true,cameraready=ebook,cover=false,hiddenfolio=shippo,fontsize=10pt,line_length=40zw,number_of_lines=34,baselineskip=25.5H"]
 # texdocumentclass: ["review-jlreq", "media=print,paper=b5,fontsize=10pt,serial_pagination=true,hiddenfolio=shippo,startpage=3,tate,twoside,twocolumn,openany"]
 # 印刷用
-texdocumentclass: ["review-jlreq", "media=print,paper=a5,bleed_margin=3,fontsize=10pt,serial_pagination=true,startpage=3,tate,twoside,twocolumn,openany"]
+texdocumentclass: ["review-jlreq", "media=print,paper=a5,bleed_margin=3,fontsize=10pt,serial_pagination=true,startpage=3,tate,twoside,onecolumn,openany"]
 # 電子用
 # texdocumentclass: ["review-jlreq", "media=ebook,paper=a5,fontsize=12pt,serial_pagination=false,startpage=3,tate,twoside,onecolumn"]
 #

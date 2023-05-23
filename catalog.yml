@@ -9,18 +9,22 @@ CHAPS:
     - yuki-no-seida.re
     - wii-sama.re
     - kabe.re
+    - rusk.re
+    - wakimichi.re
   - 漢詩作品:
     - christmas.re
+  - 詩:
+    - tomoni.re
   - ウクライナ三部作:
     - ukraine.re
   - 「きっとあなたの１４０字」作品集:
     - 140chars.re
-  - ブログ記事傑作選: 
-    - VRCHigh.re
-    - sekairyoko.re
-    - novel.re
-    - OSC-SRTC.re
-    - inokashira.re
+  # - ブログ記事傑作選: 
+  #   - VRCHigh.re
+  #   - sekairyoko.re
+  #   - novel.re
+  #   - OSC-SRTC.re
+  #   - inokashira.re
 
 APPENDIX:
 
