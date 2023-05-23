@@ -47,5 +47,5 @@
 何も知らずに、過ちを犯すしかなかった彼らを。
 
 //embed[latex]{
-\includefullpagegraphics[scale=1]{images/ukraine.pdf}
+\includefullpagegraphics[scale=0.8]{images/ukraine.pdf}
 //}

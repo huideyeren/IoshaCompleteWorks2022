@@ -134,5 +134,5 @@
 答えは、雪に聞け。
 
 //embed[latex]{
-\includefullpagegraphics[scale=1]{images/yamanote.pdf}
+\includefullpagegraphics[scale=0.8]{images/yamanote.pdf}
 //}

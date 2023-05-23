@@ -55,5 +55,5 @@ $$
 //printendnotes
 
 //embed[latex]{
-\includefullpagegraphics[scale=1]{images/nikolai.pdf}
+\includefullpagegraphics[scale=0.8]{images/nikolai.pdf}
 //}
