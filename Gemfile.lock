@@ -10,6 +10,8 @@ GEM
     mecab (0.996)
     nokogiri (1.15.1-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.15.1-x86_64-linux)
+      racc (~> 1.4)
     pandoc2review (1.4.0)
       unicode-eaw
     parallel (1.23.0)
@@ -54,6 +56,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   math_ml
