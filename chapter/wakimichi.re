@@ -64,5 +64,5 @@
 //printendnotes
 
 //embed[latex]{
-\includefullpagegraphics[scale=0.8]{images/kanae.pdf}
+\includefullpagegraphics[scale=0.7]{images/kanae.pdf}
 //}

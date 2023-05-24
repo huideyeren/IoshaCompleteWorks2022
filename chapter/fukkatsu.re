@@ -115,5 +115,5 @@
 //printendnotes
 
 //embed[latex]{
-\includefullpagegraphics[scale=0.8]{images/pascha.pdf}
+\includefullpagegraphics[scale=0.7]{images/pascha.pdf}
 //}
