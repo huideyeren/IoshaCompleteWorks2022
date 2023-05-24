@@ -111,6 +111,8 @@ else
   catalog_yaml = CATALOG_FILE
 end
 
+puts catalog_yaml
+
 SRC = FileList['./**/*.re', '*.rb'] + [CONFIG_FILE, catalog_yaml] + IMAGES + FileList[OTHERS]
 SRC_EPUB = FileList['*.css']
 SRC_PDF = FileList['layouts/*.erb', 'sty/**/*.sty']
