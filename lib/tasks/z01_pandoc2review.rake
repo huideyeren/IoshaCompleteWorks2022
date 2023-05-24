@@ -44,7 +44,7 @@ task :pandoc2review do
     File.write("#{path}/THIS_FOLDER_IS_TEMPORARY", '')
   end
 
-  catalog = YAML.load_file('catalog.yml')
+  catalog = YAML.load_file('catalog-download.yml')
   %w(PREDEF CHAPS APPENDIX POSTDEF).each do |block|
     if catalog[block].kind_of?(Array)
       catalog[block].each do |ch|
